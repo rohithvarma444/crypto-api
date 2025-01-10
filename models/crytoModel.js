@@ -1,5 +1,4 @@
-const { time } = require("console");
-const mongoose = require("mongoose");
+import mongoose from 'mongoose';
 
 const cryptoSchema = new mongoose.Schema({
     name: {
@@ -39,6 +38,6 @@ cryptoSchema.pre('save', async function(next) {
     }
 });
 
+export const Crypto = mongoose.model('Crypto', cryptoSchema);
 
-module.exports = mongoose.model('Crypto', cryptoSchema);
-
+                
