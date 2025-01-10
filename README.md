@@ -1,4 +1,3 @@
-
 # Cryptocurrency Price Tracking API
 
 ## Overview
@@ -9,12 +8,14 @@ This API allows users to track the latest prices of cryptocurrencies (Bitcoin, E
 - **Standard Deviation Calculation**: An API endpoint that calculates the standard deviation of the price of a specified cryptocurrency using the last 100 price records stored in the database.
 - **Data Capping**: The database is capped to store only the last 100 records for each cryptocurrency to optimize data storage. Older records beyond the 100 most recent are discarded.
 - **Price, Market Cap, and 24-hour Change**: The API provides real-time price, market cap, and 24-hour price change for the cryptocurrencies.
+- **CORS Enabled**: API is accessible from any origin, making it suitable for public use and cross-origin requests.
 
 ## Tech Stack
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (with Mongoose for modeling and querying)
 - **API Integration**: Axios for fetching real-time cryptocurrency data from the CoinGecko API
 - **Background Jobs**: Node-Cron for scheduling tasks
+- **Security**: CORS middleware for cross-origin access
 
 ## API Endpoints
 
