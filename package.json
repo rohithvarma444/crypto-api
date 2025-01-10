@@ -1,0 +1,30 @@
+{
+  "name": "crypto-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohithvarma444/crypto-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohithvarma444/crypto-assignment/issues"
+  },
+  "homepage": "https://github.com/rohithvarma444/crypto-assignment#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.4",
+    "node": "^22.13.0",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.9"
+  }
+}
